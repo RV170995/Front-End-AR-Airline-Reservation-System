@@ -1,0 +1,399 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap"); */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 60px;
+  }
+  
+  .header .logo {
+    font-size: 25px;
+    font-family: "Sriracha", cursive;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-right: 20px;
+    height: 60px;
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: black;
+    padding: 35px 20px;
+  }
+
+  .nav-items a:hover{
+    color:black ;
+    font-weight: bold;
+    padding: 35px 20px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url("cloud.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .intro h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color:#f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .intro p {
+    font-size: 20px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .intro button {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  }
+
+  .intro button .a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .intro button .a:hover{
+    text-decoration: none;
+    color: black;
+  }
+  .achievements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 80px;
+  }
+  
+  .achievements .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .achievements .work i {
+    width: fit-content;
+    font-size: 50px;
+    color: #333333;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    padding: 12px;
+  }
+  
+  .achievements .work .work-heading {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .achievements .work .work-text {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+  
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+  }
+  
+  .about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .about-me-text h2 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .about-me-text p {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+  
+  /* CSS for footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 10) 0%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 40px 80px;
+  }
+  
+  .footer .copy {
+    color: #fff;
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .bottom-links .links span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  
+  .bottom-links .links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+  }
+
+  .bottom-links .links a:hover {
+    font-weight: bold;
+  }
+
+
+
+/*******************Registraion Page***********************/
+.Container .row
+{
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),url("reg_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: white;
+  margin : 0 0 60px 0;
+}
+
+.Container .row .col-md-4{
+  padding: 70px 0 20px 0;/*t r b l*/
+  margin: 0 0 60px 550px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+.input-box input{
+  width: 500px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 40px;
+  font-size: 12px;
+  color: white;
+  margin: 5px;
+  padding: 20px 0px 10px 10px;
+}
+
+.input-box input::placeholder
+{
+    color: gray;
+}
+.reg_btn
+{
+    width: 150px;
+    height: 35px;
+    background: white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    font-weight:700;
+    margin: 20px 0 0 120px;
+}
+
+/************************Login Page*************************/
+
+.log-intro{
+  padding: 70px 0 20px 0;/*t r b l*/
+  margin: 0 0 60px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("air_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/**************************About****************************/
+
+li{
+  list-style-type: none;
+  padding:10px 0px 0 0;
+}
+
+.about{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url("air_bg1.jpeg");
+  height:300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 60px 250px 0 250px;
+}
+.about-1
+{
+  margin: 10px 150px 0 150px;
+  padding:10px 100px 0 100px;
+}
+
+.about-2
+{
+  margin: 10px 150px 0 150px;
+  padding:10px 100px 0 100px;
+}
+.about-3
+{
+  margin: 10px 150px 0 150px;
+  padding:10px 100px 0 100px;
+}
+.about-4
+{
+  margin: 10px 150px 0 150px;
+  padding:10px 100px 0 100px;
+}
+.about-5
+{
+  margin: 10px 150px 0 150px;
+   padding:20px 100px 60px 100px;
+}
+
+
+/***********************Checkout****************************/
+
+
+.Container .form-box
+{
+  position: relative;
+  width: 420px;
+  padding: 40px;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%); */
+  border-radius: 10px;
+  color: black;
+  margin : 0 0 60px 60px;
+
+  
+}
+
+.checkout-intro{
+  padding: 04px 0 20px 0;/*t r b l*/
+  margin: 0 0 60px 0;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0,0.4) 0%, rgba(0, 0, 0, 0.4) 100%),url("cloud.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.checkout-intro .input-box input{
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 40px;
+  font-size: 12px;
+  color: black;
+  margin: 5px;
+  padding: 20px 0px 10px 10px;
+}
+
+.checkout-intro .input-box input::placeholder
+{
+    color: gray;
+}
+
+.checkout-intro .input-box select{
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 40px;
+  font-size: 12px;
+  color: black;
+  margin: 5px;
+  padding: 20px 0px 10px 10px;
+}
+.sub_btn
+{
+    width: 150px;
+    height: 35px;
+    background: white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    font-weight:700;
+    margin: 20px 0 0 120px;
+}
+
+
+.table
+{
+  width:50%;
+  margin: 30px 0 0 300px;
+  border:1px solid gray;
+}
+.table tr th
+{
+  border:1px solid gray;
+  background:#2d2d39;
+  color:white;
+}
+
+.table tr td
+{
+  border:1px solid gray;
+}
+
+h3
+{
+  margin: 100px 0 0 300px;
+}
