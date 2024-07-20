@@ -20,8 +20,8 @@ const ReservationDetails  = () =>
     setReservation(result.data);
    }
 
-   const deleteReservation = async (reg_id) => {
-    await axios.delete(`http://localhost:8080/reservation/delete/${reservId}`);
+   const deleteReservation = async (reservId) => {
+    await axios.delete(`http://localhost:8080/reservations/delete/${reservId}`);
     loadReservation();
   };
   return (
@@ -33,10 +33,12 @@ const ReservationDetails  = () =>
           <thead>
             <tr>
               <th scope="col">S.no</th>
+              <th scope="col">Reservation Id</th>
               <th scope="col">Name</th>
               <th scope="col">Address</th>
               <th scope="col">Email Id</th>
-              <th scope="col">Conatact</th>
+              <th scope="col">Age</th>
+              <th scope="col">Contact</th>
               <th scope="col">Amount</th>
               <th scope="col">Date</th>
               <th scope="col">Arival time</th>
@@ -50,14 +52,14 @@ const ReservationDetails  = () =>
           <tbody>
                 {reservation.map((reservation, index) => (
                   <tr>
-                    <td scope="row" key={index}>
+                  <td scope="row" key={index}>
                       {index + 1}
                     </td>
                     <td>{reservation.reservId}</td>
                     <td>{reservation.name}</td>
-                    <td>{reservation.age}</td>
                     <td>{reservation.address}</td>
                     <td>{reservation.email}</td>
+                    <td>{reservation.age}</td>
                     <td>{reservation.contact}</td>
                     <td>{reservation.amount}</td>
                     <td>{reservation.date}</td>
@@ -67,7 +69,7 @@ const ReservationDetails  = () =>
                     <td>{reservation.destination}</td>
                     <td>{reservation.paymentMode}</td>
                     <td>
-                  <button
+                    <button
                     className="btn btn-danger mx-2"
                     onClick={() => deleteReservation(reservation.reservId)}
                   >
